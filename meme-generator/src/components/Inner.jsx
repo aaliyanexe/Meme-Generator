@@ -1,6 +1,6 @@
 import React from 'react'
 
-const inner = () => {
+const Inner = () => {
 
   function label({ type, placeholder, name }) {
     return (
