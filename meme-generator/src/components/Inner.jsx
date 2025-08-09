@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-
 export default function Inner() {
   const [meme, setMeme] = useState({
     topText: 'One does not simply',
@@ -45,11 +44,18 @@ export default function Inner() {
         </div>
       </div>
 
-      <button
-        className="w-full max-w-2xl py-3 font-semibold text-white transition-all duration-300 ease-out rounded-md shadow-md cursor-pointer  bg-gradient-to-r from-violet-600 to-fuchsia-500 hover:from-violet-500 hover:to-fuchsia-400 active:scale-95 hover:shadow-lg hover:brightness-110"
-      >
-        Get a new meme image 🖼
-      </button>
+      {/* Fancy Glow Button */}
+      <div className="relative w-full max-w-2xl overflow-hidden rounded-md group">
+        {/* Sliding shine */}
+        <div className="absolute z-10 -translate-x-44 group-hover:translate-x-[30rem] ease-in transition-all duration-700 h-full w-44 bg-gradient-to-r from-white/20 to-white/5 opacity-40 -skew-x-12"></div>
+
+        <button className="relative z-[1] w-full py-3 font-semibold text-white transition-all duration-300 ease-out rounded-md shadow-md cursor-pointer bg-gradient-to-r from-violet-600 to-fuchsia-500 hover:from-violet-500 hover:to-fuchsia-400 active:scale-95 hover:shadow-lg hover:brightness-110">
+          Get a new meme image 😎
+        </button>
+
+        {/* Outer glow */}
+        <div className="absolute inset-0 duration-1000 group-hover:animate-spin w-full h-[100px] bg-gradient-to-r from-violet-600 via-fuchsia-500 to-purple-700 blur-[30px] -z-10"></div>
+      </div>
 
       <div className="relative w-full max-w-2xl mt-4">
         <img
