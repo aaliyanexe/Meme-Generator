@@ -10,7 +10,6 @@
         <img src="https://i.postimg.cc/dtpQLR75/F5355388-F54-A-476-B-A051-7-A4-E17-EF9-F01-removebg-preview.png" width="200" alt="live deployement icon" />
 </a>
   
----
 
 ## About
 
