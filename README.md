@@ -6,10 +6,10 @@
 
 ## Live Deployment
 
-<a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
-        <img src="https://i.postimg.cc/X7Bkzw1d/A2-BE5825-EEE6-40-F3-8-AD2-E8-EFBAFC803-E-removebg-preview.png" width="200" alt="live deployement icon" />
+<a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="Live deployment icon">
+        <img src="https://i.postimg.cc/dtpQLR75/F5355388-F54-A-476-B-A051-7-A4-E17-EF9-F01-removebg-preview.png" width="200" alt="live deployement icon" />
 </a>
-  
+
 ---
 
 ## About
@@ -133,9 +133,9 @@ Open ```http://localhost:3000```  to view the project in the browser.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
----
+<a href="https://opensource.org/licenses/MIT" target="_blank" title="MIT license Icon">
+        <img src="https://i.postimg.cc/d0BjsVWj/image.png" width="200" alt="MIT license Icon" />
+</a>
 
 
 
