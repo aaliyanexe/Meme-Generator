@@ -1,6 +1,5 @@
 # Meme Generator
 
-[![Meme Generator Screenshot]()](https://meme-generator-eta-henna.vercel.app/)
 
 [![Meme Generator Screenshot](https://i.postimg.cc/Ls2Kx4DK/Screenshot-2025-08-13-102945.png)](https://meme-generator-eta-henna.vercel.app/)
 
@@ -8,7 +7,7 @@
 ## Live Deployment
 
 <a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
-        <img src="https://i.postimg.cc/q7KfBh73/A6-E6-C151-9-E59-4-DCB-BDBD-9926348-C7158-removebg-preview.png" width="50" alt="live deployement icon" />
+        <img src="https://i.postimg.cc/X7Bkzw1d/A2-BE5825-EEE6-40-F3-8-AD2-E8-EFBAFC803-E-removebg-preview.png" width="100" alt="live deployement icon" />
 </a>
   
 ---
