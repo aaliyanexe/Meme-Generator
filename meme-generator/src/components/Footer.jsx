@@ -10,17 +10,23 @@ const Footer = () => {
       </span>
       <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
-          <a href="#" className="hover:underline mr-4 md:mr-6">
+          <a
+            href="https://github.com/aaliyanexe/Meme-Generator/tree/main/meme-generator"
+            className="hover:underline mr-4 md:mr-6"
+          >
             Github Repo
           </a>
         </li>
         <li>
-          <a href="#" className="hover:underline mr-4 md:mr-6">
+          <a
+            href="https://x.com/AaliyanDevX"
+            className="hover:underline mr-4 md:mr-6"
+          >
             Twitter
           </a>
         </li>
         <li>
-          <a href="#" className="hover:underline mr-4 md:mr-6">
+          <a href="" className="hover:underline mr-4 md:mr-6">
             Discord
           </a>
         </li>
