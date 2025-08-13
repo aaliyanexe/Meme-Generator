@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from 'react'
 import Button from './Button'
 import html2canvas from 'html2canvas'
@@ -161,7 +162,7 @@ export default function Inner() {
             top: '1rem',
             left: '50%',
             transform: 'translateX(-50%)',
-            fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
+            fontSize: 'clamp(1.35rem, 4vw, 2.5rem)',
             color: 'white',
             WebkitTextStroke: '0.75px black',
             fontFamily: 'Impact, Arial Black, sans-serif',
@@ -169,7 +170,7 @@ export default function Inner() {
             lineHeight: 1.1,
             pointerEvents: 'none',
             textTransform: 'uppercase',
-            wordBreak: 'break-word',
+            wordBreak: 'break-word', 
           }}
         >
           {meme.topText}
@@ -181,7 +182,7 @@ export default function Inner() {
             bottom: '1rem',
             left: '50%',
             transform: 'translateX(-50%)',
-            fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
+            fontSize: 'clamp(1.35rem, 4vw, 2.5rem)',
             color: 'white',
             WebkitTextStroke: '0.75px black',
             fontFamily: 'Impact, Arial Black, sans-serif',
