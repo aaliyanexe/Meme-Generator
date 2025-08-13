@@ -7,7 +7,7 @@
 ## Live Deployment
 
 <a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
-        <img src="https://png.pngtree.com/png-vector/20191026/ourmid/pngtree-live-icon-design-template-vector-isolated-illustration-png-image_1874482.jpg" width="50" alt="live deployement icon" />
+        <img src="https://png.pngtree.com/png-clipart/20210310/original/pngtree-live-streaming-icons-red-symbols-and-buttons-of-png-image_5954160.jpg" width="50" alt="live deployement icon" />
 </a>
   
 ---
@@ -24,6 +24,8 @@ This project uses:
 - Styled Components for scoped styling  
 - Uiverse components for buttons and UI elements  
 - **Imgflip API** for meme templates
+
+The app also **generates a new meme image whenever you click the "Get a new image" button**, allowing users to browse different meme templates instantly.
 
 ---
 
