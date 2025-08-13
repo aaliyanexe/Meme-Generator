@@ -8,7 +8,7 @@
 ## Live Deployment
 
 <a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
-        <img src="https://i.postimg.cc/XXS99PbL/Untitled-removebg-preview.png" width="50" alt="live deployement icon" />
+        <img src="https://i.postimg.cc/q7KfBh73/A6-E6-C151-9-E59-4-DCB-BDBD-9926348-C7158-removebg-preview.png" width="50" alt="live deployement icon" />
 </a>
   
 ---
