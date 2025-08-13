@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import Button from './Button'
+import html2canvas from 'html2canvas'
 
 export default function Inner() {
   const fallbackImage = '/default-meme.jpg'
@@ -11,6 +13,7 @@ export default function Inner() {
 
   const [allMemes, setAllMemes] = useState([])
   const [loading, setLoading] = useState(true)
+  const memeRef = useRef(null)
 
   useEffect(() => {
     const controller = new AbortController()
@@ -57,6 +60,28 @@ export default function Inner() {
     }
   }
 
+  async function handleDownload() {
+    if (!memeRef.current) return
+
+    try {
+      const canvas = await html2canvas(memeRef.current, {
+        backgroundColor: null,
+        useCORS: true,
+        scale: 2,
+      })
+      const dataUrl = canvas.toDataURL('image/png')
+
+      const link = document.createElement('a')
+      link.href = dataUrl
+      link.download = 'custom-meme.png'
+      document.body.appendChild(link)
+      link.click()
+      link.remove()
+    } catch (error) {
+      console.error('Failed to download meme:', error)
+    }
+  }
+
   return (
     <main className="flex flex-col items-center px-4 py-6 animate-fade-in">
       {/* Input Fields */}
@@ -99,7 +124,7 @@ export default function Inner() {
       </div>
 
       {/* Meme Button */}
-      <div className="relative w-full max-w-2xl overflow-hidden rounded-md group">
+      <div className="relative w-full max-w-2xl overflow-hidden rounded-md group mb-4">
         <div className="absolute z-10 -translate-x-44 group-hover:translate-x-[30rem] ease-in transition-all duration-700 h-full w-44 bg-gradient-to-r from-white/20 to-white/5 opacity-40 -skew-x-12"></div>
 
         <button
@@ -118,60 +143,65 @@ export default function Inner() {
       </div>
 
       {/* Meme Display */}
-      <div className="relative w-full max-w-2xl mt-4">
+      <div
+        ref={memeRef}
+        className="relative w-full max-w-2xl mt-4 select-none"
+        style={{ userSelect: 'none' }}
+      >
         <img
           src={meme.imageUrl}
           alt="Generated meme"
           className="w-full h-auto rounded-md shadow-lg object-cover"
           onError={(e) => (e.target.src = fallbackImage)}
+          crossOrigin="anonymous"
         />
-        <>
-          <>
-            <>
-              <span
-                className="absolute w-[90%] text-center uppercase"
-                style={{
-                  top: '1rem',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
-                  color: 'white',
-                  WebkitTextStroke: '2px black', // clean black outline
-                  fontFamily: 'Impact, Arial Black, sans-serif',
-                  fontWeight: '900',
-                  lineHeight: 1.1,
-                  userSelect: 'none',
-                  pointerEvents: 'none',
-                  textTransform: 'uppercase',
-                  wordBreak: 'break-word',
-                }}
-              >
-                {meme.topText}
-              </span>
 
-              <span
-                className="absolute w-[90%] text-center uppercase"
-                style={{
-                  bottom: '1rem',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
-                  color: 'white',
-                  WebkitTextStroke: '2px black',
-                  fontFamily: 'Impact, Arial Black, sans-serif',
-                  fontWeight: '900',
-                  lineHeight: 1.1,
-                  userSelect: 'none',
-                  pointerEvents: 'none',
-                  textTransform: 'uppercase',
-                  wordBreak: 'break-word',
-                }}
-              >
-                {meme.bottomText}
-              </span>
-            </>
-          </>
-        </>
+        <span
+          className="absolute w-[90%] text-center uppercase"
+          style={{
+            top: '1rem',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
+            color: 'white',
+            WebkitTextStroke: '0.75px black',
+            fontFamily: 'Impact, Arial Black, sans-serif',
+            fontWeight: '900',
+            lineHeight: 1.1,
+            pointerEvents: 'none',
+            textTransform: 'uppercase',
+            wordBreak: 'break-word',
+          }}
+        >
+          {meme.topText}
+        </span>
+
+        <span
+          className="absolute w-[90%] text-center uppercase"
+          style={{
+            bottom: '1rem',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
+            color: 'white',
+            WebkitTextStroke: '0.75px black',
+            fontFamily: 'Impact, Arial Black, sans-serif',
+            fontWeight: '900',
+            lineHeight: 1.1,
+            pointerEvents: 'none',
+            textTransform: 'uppercase',
+            wordBreak: 'break-word',
+          }}
+        >
+          {meme.bottomText}
+        </span>
+      </div>
+
+      {/* Download Button centered below the image */}
+      <div className="flex justify-center w-full max-w-2xl mt-3">
+        <Button onClick={handleDownload} disabled={loading}>
+          {loading ? 'Loading...' : 'Download Meme'}
+        </Button>
       </div>
     </main>
   )
