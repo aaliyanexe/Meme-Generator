@@ -7,8 +7,9 @@
 ## Live Deployment
 
 <a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
-    <img src="[https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-png-vectors%2Flive-icon&psig=AOvVaw3kIHtq8dFVJXJXaZlTb4PV&ust=1755145833432000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiTzPP5ho8DFQAAAAAdAAAAABAE)" width="50" alt="LinkedIn icon" />
-  </a>
+        <img src="[https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-png-vectors%2Flive-icon&psig=AOvVaw3kIHtq8dFVJXJXaZlTb4PV&ust=1755145833432000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiTzPP5ho8DFQAAAAAdAAAAABAE)" width="50" alt="LinkedIn icon" />
+</a>
+  
 ---
 
 ## About
@@ -22,9 +23,18 @@ This project uses:
 - `html2canvas` for rendering memes as downloadable images  
 - Styled Components for scoped styling  
 - UI-verse components for buttons and UI elements  
-- Public API for meme images  
+- **Imgflip API** for meme templates ([https://api.imgflip.com/get_memes](https://api.imgflip.com/get_memes))  
 
 ---
+
+## API
+
+This project fetches meme templates from the **Imgflip API**, which provides a large collection of popular meme images. The API endpoint used:
+```
+
+https://api.imgflip.com/get_memes
+
+```
 
 ## Features
 
