@@ -3,9 +3,9 @@
 ![Meme Generator Screenshot](./path-to-your-screenshot.png)  
 <!-- Replace the above path with your actual screenshot image path -->
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()  
-[![License](https://img.shields.io/badge/license-MIT-blue)]()  
-[![Vercel](https://img.shields.io/badge/deployed-on-vercel-000000?style=flat&logo=vercel)](https://meme-generator-eta-henna.vercel.app/)
+## Live Deployment
+
+[![Vercel](https://camo.githubusercontent.com/43962ea76518cc3d0819b0206791ae36c28ccc369f99f412379914f42431c025/68747470733a2f2f696d672e7365696c64732e696f2f62616467652f76657263656c2d2532333030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d76657263656c266c6f676f436f6c6f723d7768697465)](https://meme-generator-eta-henna.vercel.app/)
 
 ---
 
@@ -92,8 +92,9 @@ Open ```http://localhost:3000```  to view the project in the browser.
 
 ## Links
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-blue?style=flat&logo=vercel)](https://meme-generator-eta-henna.vercel.app/)  
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black?style=flat&logo=github)](https://github.com/aaliyanexe/Meme-Generator)
+[![Vercel](https://camo.githubusercontent.com/43962ea76518cc3d0819b0206791ae36c28ccc369f99f412379914f42431c025/68747470733a2f2f696d672e7365696c64732e696f2f62616467652f76657263656c2d2532333030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d76657263656c266c6f676f436f6c6f723d7768697465)](https://meme-generator-eta-henna.vercel.app/)
+[![GitHub](https://camo.githubusercontent.com/7e282220b8ec0dd29cf99be1c0f5e82d74a42bc84ed834ee6afd86b4bad3bfee/68747470733a2f2f696d672e7365696c64732e696f2f62616467652f6769746875622d2532333132313031312e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465)](https://github.com/aaliyanexe/Meme-Generator)
+
 
 ---
 
