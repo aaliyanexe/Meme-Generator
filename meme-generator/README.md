@@ -1,13 +1,14 @@
 # Meme Generator
 
-[![Meme Generator Screenshot](https://i.postimg.cc/SKDjmv15/Screenshot-2025-08-13-093239.png)](https://meme-generator-eta-henna.vercel.app/)
+[![Meme Generator Screenshot]()](https://meme-generator-eta-henna.vercel.app/)
 
+[![Meme Generator Screenshot](https://i.postimg.cc/Ls2Kx4DK/Screenshot-2025-08-13-102945.png)](https://meme-generator-eta-henna.vercel.app/)
 
 
 ## Live Deployment
 
 <a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
-        <img src="https://png.pngtree.com/png-clipart/20210310/original/pngtree-live-streaming-icons-red-symbols-and-buttons-of-png-image_5954160.jpg" width="50" alt="live deployement icon" />
+        <img src="" width="50" alt="live deployement icon" />
 </a>
   
 ---
@@ -74,7 +75,7 @@ Open ```http://localhost:3000```  to view the project in the browser.
 1. Enter your text in the top and bottom input fields.  
 2. The text will appear on the meme image below.  
 3. Click the **Download** button to save the meme as a PNG.
-4. 
+
 ---
 
 ## File Structure
