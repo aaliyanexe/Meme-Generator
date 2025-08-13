@@ -4,16 +4,20 @@ import html2canvas from 'html2canvas'
 
 export default function Inner() {
   const fallbackImage = '/default-meme.jpg'
+  const defaultMordorMemeUrl = 'https://i.imgflip.com/1bij.jpg'
 
   const [meme, setMeme] = useState({
-    topText: 'When the code finally runs',
-    bottomText: 'But you have no idea why',
-    imageUrl: fallbackImage,
+    topText: 'One does not simply',
+    bottomText: 'Walk into Mordor',
+    imageUrl: defaultMordorMemeUrl,
   })
 
   const [allMemes, setAllMemes] = useState([])
   const [loading, setLoading] = useState(true)
   const memeRef = useRef(null)
+
+  // Indices to skip
+  const skipIndices = new Set([0, 1, 3, 52, 58, 67, 79])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -27,12 +31,6 @@ export default function Inner() {
 
         if (data.success && Array.isArray(data.data?.memes)) {
           setAllMemes(data.data.memes)
-          setMeme((prev) => ({
-            ...prev,
-            imageUrl: data.data.memes[0].url,
-          }))
-        } else {
-          console.error('Invalid meme data from API')
         }
       } catch (error) {
         if (error.name !== 'AbortError') {
@@ -54,7 +52,11 @@ export default function Inner() {
 
   function getRandomMemeImage() {
     if (allMemes.length > 0) {
-      const randomIndex = Math.floor(Math.random() * allMemes.length)
+      let randomIndex
+      do {
+        randomIndex = Math.floor(Math.random() * allMemes.length)
+      } while (skipIndices.has(randomIndex))
+
       const url = allMemes[randomIndex].url
       setMeme((prev) => ({ ...prev, imageUrl: url }))
     }
@@ -84,7 +86,6 @@ export default function Inner() {
 
   return (
     <main className="flex flex-col items-center px-4 py-6 animate-fade-in">
-      {/* Input Fields */}
       <div className="grid w-full max-w-2xl grid-cols-1 gap-4 mb-4 sm:grid-cols-2">
         <div className="flex flex-col">
           <label
@@ -123,7 +124,6 @@ export default function Inner() {
         </div>
       </div>
 
-      {/* Meme Button */}
       <div className="relative w-full max-w-2xl overflow-hidden rounded-md group mb-4">
         <div className="absolute z-10 -translate-x-44 group-hover:translate-x-[30rem] ease-in transition-all duration-700 h-full w-44 bg-gradient-to-r from-white/20 to-white/5 opacity-40 -skew-x-12"></div>
 
@@ -142,7 +142,6 @@ export default function Inner() {
         <div className="absolute inset-0 duration-1000 group-hover:animate-spin w-full h-[100px] bg-gradient-to-r from-violet-600 via-fuchsia-500 to-purple-700 blur-[30px] -z-10"></div>
       </div>
 
-      {/* Meme Display */}
       <div
         ref={memeRef}
         className="relative w-full max-w-2xl mt-4 select-none"
@@ -197,7 +196,6 @@ export default function Inner() {
         </span>
       </div>
 
-      {/* Download Button centered below the image */}
       <div className="flex justify-center w-full max-w-2xl mt-3">
         <Button onClick={handleDownload} disabled={loading}>
           {loading ? 'Loading...' : 'Download Meme'}
