@@ -8,7 +8,7 @@
 ## Live Deployment
 
 <a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
-        <img src="" width="50" alt="live deployement icon" />
+        <img src="https://i.postimg.cc/XXS99PbL/Untitled-removebg-preview.png" width="50" alt="live deployement icon" />
 </a>
   
 ---
@@ -106,7 +106,7 @@ Open ```http://localhost:3000```  to view the project in the browser.
 ---
 
 
-## 🤝 Connect with Me
+## Connect with Me
 
 <p align="center" style="gap: 24px; display: flex; justify-content: center; align-items: center;">
 
