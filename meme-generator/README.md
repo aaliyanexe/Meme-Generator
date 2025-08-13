@@ -1,13 +1,13 @@
 # Meme Generator
 
+[![Meme Generator Screenshot](https://i.postimg.cc/SKDjmv15/Screenshot-2025-08-13-093239.png)](https://meme-generator-eta-henna.vercel.app/)
 
-![Meme Generator Screenshot](https://i.postimg.cc/SKDjmv15/Screenshot-2025-08-13-093239.png)
 
 
 ## Live Deployment
 
 <a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
-        <img src="[https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-png-vectors%2Flive-icon&psig=AOvVaw3kIHtq8dFVJXJXaZlTb4PV&ust=1755145833432000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiTzPP5ho8DFQAAAAAdAAAAABAE)" width="50" alt="LinkedIn icon" />
+        <img src="https://png.pngtree.com/png-vector/20191026/ourmid/pngtree-live-icon-design-template-vector-isolated-illustration-png-image_1874482.jpg" width="50" alt="live deployement icon" />
 </a>
   
 ---
@@ -22,8 +22,8 @@ This project uses:
 - Tailwind CSS for styling  
 - `html2canvas` for rendering memes as downloadable images  
 - Styled Components for scoped styling  
-- UI-verse components for buttons and UI elements  
-- **Imgflip API** for meme templates ([https://api.imgflip.com/get_memes](https://api.imgflip.com/get_memes))  
+- Uiverse components for buttons and UI elements  
+- **Imgflip API** for meme templates
 
 ---
 
