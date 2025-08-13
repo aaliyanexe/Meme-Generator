@@ -1,13 +1,14 @@
 # Meme Generator
 
-![Meme Generator Screenshot](./path-to-your-screenshot.png)  
-<!-- Replace the above path with your actual screenshot image path -->
+
+![Meme Generator Screenshot](https://i.postimg.cc/SKDjmv15/Screenshot-2025-08-13-093239.png)
+
 
 ## Live Deployment
 
-<a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" rel="noopener noreferrer">
-  <img src="https://camo.githubusercontent.com/43962ea76518cc3d0819b0206791ae36c28ccc369f99f412379914f42431c025/68747470733a2f2f696d672e7365696c64732e696f2f62616467652f76657263656c2d2532333030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d76657263656c266c6f676f436f6c6f723d7768697465" alt="Vercel Badge" />
-</a>
+<a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" title="LinkedIn">
+    <img src="[https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-png-vectors%2Flive-icon&psig=AOvVaw3kIHtq8dFVJXJXaZlTb4PV&ust=1755145833432000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiTzPP5ho8DFQAAAAAdAAAAABAE)" width="50" alt="LinkedIn icon" />
+  </a>
 ---
 
 ## About
@@ -91,24 +92,28 @@ Open ```http://localhost:3000```  to view the project in the browser.
 
 ---
 
-## Links
 
-<a href="https://meme-generator-eta-henna.vercel.app/" target="_blank" rel="noopener noreferrer">
-  <img src="https://camo.githubusercontent.com/43962ea76518cc3d0819b0206791ae36c28ccc369f99f412379914f42431c025/68747470733a2f2f696d672e7365696c64732e696f2f62616467652f76657263656c2d2532333030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d76657263656c266c6f676f436f6c6f723d7768697465" alt="Vercel Badge" />
-</a>
+## 🤝 Connect with Me
 
-<a href="https://github.com/aaliyanexe/Meme-Generator" target="_blank" rel="noopener noreferrer">
-  <img src="https://camo.githubusercontent.com/7e282220b8ec0dd29cf99be1c0f5e82d74a42bc84ed834ee6afd86b4bad3bfee/68747470733a2f2f696d672e7365696c64732e696f2f62616467652f6769746875622d2532333132313031312e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" alt="GitHub Badge" />
-</a>
+<p align="center" style="gap: 24px; display: flex; justify-content: center; align-items: center;">
 
----
+  <a href="https://www.linkedin.com/in/ahmed-aaliyan-98a046327" target="_blank" title="LinkedIn">
+    <img src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" width="50" alt="LinkedIn icon" />
+  </a>
 
-## Contact
+  <a href="mailto:ahmedaaliyan.dev@gmail.com" target="_blank" title="Email">
+    <img src="https://camo.githubusercontent.com/91120ade5b1709cfa800428330efdd7370351bcb51b3f139534c3a45f053a6f8/68747470733a2f2f696d672e69636f6e73382e636f6d2f3f73697a653d3130302669643d717952704167676e56307a4826666f726d61743d706e6726636f6c6f723d303030303030" width="50" alt="Gmail icon" />
+  </a>
 
-Feel free to reach out for questions, feedback, or collaboration:
+  <a href="https://x.com/AaliyanDevX" target="_blank" title="Twitter/X">
+    <img src="https://img.icons8.com/ios11/512/4D4D4D/twitterx--v2.png" width="50" alt="Twitter/X icon" />
+  </a>
 
-- **X (Twitter):** [@AaliyanDevX](https://x.com/AaliyanDevX)  
-- **LinkedIn:** [Ahmed Aaliyan](https://www.linkedin.com/in/ahmed-aaliyan-98a046327)
+  <a href="https://dev.to/aaliyanexe" target="_blank" title="Dev.to">
+    <img src="https://img.icons8.com/?size=512&id=n98knU41v5Aq&format=png" width="50" alt="Dev.to icon" />
+  </a>
+
+</p>
 
 ---
 
